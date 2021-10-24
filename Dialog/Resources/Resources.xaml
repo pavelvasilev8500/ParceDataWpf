@@ -1,0 +1,41 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!--#region CloseIcon-->
+    <DrawingImage x:Key="CloseIcon">
+        <DrawingImage.Drawing>
+            <DrawingGroup ClipGeometry="M0,0 V15 H15 V0 H0 Z">
+                <DrawingGroup Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-1.90571414609106,3.3523190625007">
+                    <GeometryDrawing Brush="#FF000000">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0.625" RadiusY="0.625" Rect="3.0938,3.9766,1.25,10" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+                <DrawingGroup Transform="-0.707106781186547,-0.707106781186548,0.707106781186548,-0.707106781186547,-1.02259589753319,21.6740269104147">
+                    <GeometryDrawing Brush="#FF000000">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0.625" RadiusY="0.625" Rect="3.9775,11.0488,1.25,10" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <!--#endregion-->
+    
+    <!--#region MinimazeIcon-->
+    <DrawingImage x:Key="MinimazeIcon">
+        <DrawingImage.Drawing>
+                <DrawingGroup ClipGeometry="M0,0 V2 H8 V0 H0 Z">
+                    <GeometryDrawing Brush="#FF000000">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="1" RadiusY="1" Rect="0,0,8,2" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+        <!--#endregion-->
+    
+</ResourceDictionary>

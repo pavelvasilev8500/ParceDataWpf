@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="ModuleA.Views.FullMenuView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ModuleA.Views"
+             xmlns:prism="http://prismlibrary.com/"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignHeight="374" 
+             d:DesignWidth="200"
+             Background="#1E1E1E">
+
+        <Grid Margin="10 30 10 10 ">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical"
+                        Grid.Row="0">
+                
+                <Button 
+                    Content="Input Data"
+                    Foreground="White"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="InputDataView"
+                    Style="{DynamicResource Button1}"
+                    Height="40"
+                    Margin="0 0 0 20"
+                    VerticalAlignment="Top"/>
+
+                <Button 
+                    Content="Data from file"
+                    Foreground="White"
+                    Style="{DynamicResource Button1}"
+                    Command="{Binding NavigateCommand}"
+                    CommandParameter="FileDataView"
+                    Height="40"
+                    VerticalAlignment="Top"/>
+            </StackPanel>
+            
+            <Button 
+                Grid.Row="2"
+                Content="Info"
+                Foreground="White"
+                Style="{DynamicResource Button1}"
+                Command="{Binding NavigateCommand}"
+                CommandParameter="MenuView"
+                Height="40"
+                Margin="0 0 0 1"
+                VerticalAlignment="Bottom"/>
+        </Grid>
+   
+</UserControl>

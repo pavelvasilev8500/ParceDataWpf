@@ -1,0 +1,78 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <!--#region CloseIcon-->
+    <DrawingImage x:Key="CloseIcon">
+        <DrawingImage.Drawing>
+            <DrawingGroup ClipGeometry="M0,0 V15 H15 V0 H0 Z">
+                <DrawingGroup Transform="0.707106781186548,-0.707106781186547,0.707106781186547,0.707106781186548,-1.90571414609106,3.3523190625007">
+                    <GeometryDrawing Brush="#FF000000">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0.625" RadiusY="0.625" Rect="3.0938,3.9766,1.25,10" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+                <DrawingGroup Transform="-0.707106781186547,-0.707106781186548,0.707106781186548,-0.707106781186547,-1.02259589753319,21.6740269104147">
+                    <GeometryDrawing Brush="#FF000000">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="0.625" RadiusY="0.625" Rect="3.9775,11.0488,1.25,10" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <!--#endregion-->
+    
+    <!--#region MinimazeIcon-->
+    <DrawingImage x:Key="MinimazeIcon">
+        <DrawingImage.Drawing>
+                <DrawingGroup ClipGeometry="M0,0 V2 H8 V0 H0 Z">
+                    <GeometryDrawing Brush="#FF000000">
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry RadiusX="1" RadiusY="1" Rect="0,0,8,2" />
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+        <!--#endregion-->
+    
+    <!--#region Hamburger-->
+    <DrawingImage x:Key="HamburgerImage">
+        <DrawingImage.Drawing>
+            <DrawingGroup ClipGeometry="M0,0 V26 H20 V0 H0 Z">
+                <GeometryDrawing Brush="#FFFFFFFF">
+                    <GeometryDrawing.Geometry>
+                        <RectangleGeometry RadiusX="2" RadiusY="2" Rect="0,0,20,4" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="#FFFFFFFF">
+                    <GeometryDrawing.Geometry>
+                        <RectangleGeometry RadiusX="2" RadiusY="2" Rect="0,11,20,4" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+                <GeometryDrawing Brush="#FFFFFFFF">
+                    <GeometryDrawing.Geometry>
+                        <RectangleGeometry RadiusX="2" RadiusY="2" Rect="0,22,20,4" />
+                    </GeometryDrawing.Geometry>
+                </GeometryDrawing>
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <!--#endregion-->
+    
+    <!--#region BackArrow-->
+    <DrawingImage x:Key="BackArrowImage">
+        <DrawingImage.Drawing>
+            <DrawingGroup ClipGeometry="M0,0 V18 H18 V0 H0 Z">
+                <DrawingGroup.Transform>
+                    <TranslateTransform X="0" Y="6.8608564163241681E-08" />
+                </DrawingGroup.Transform>
+                <GeometryDrawing Brush="#FFFFFFFF" Geometry="F1 M18,18z M0,0z M16.9151,7.52682C16.8414,7.51288,16.7669,7.50645,16.6924,7.50758L3.99784,7.50758 4.2746,7.3574C4.54512,7.20803,4.7912,7.00473,5.00182,6.75671L8.56034,2.60444C9.02901,2.0824 9.10751,1.2426 8.74637,0.614647 8.32608,-0.0545137 7.52043,-0.199806 6.94686,0.29018 6.90053,0.329788 6.85649,0.372962 6.8151,0.419422L0.380179,7.92806C-0.12271,8.5142,-0.122844,9.46503,0.379864,10.0518L0.38087,10.053 3.60077,13.8073 6.82067,17.5616C7.32435,18.1473 8.13952,18.146 8.64144,17.5587 8.68094,17.5125 8.71781,17.4633 8.75183,17.4115 9.11256,16.7835 9.03351,15.9437 8.5645,15.4217L5.00973,11.2619C4.82076,11.0413,4.60352,10.8564,4.36581,10.7138L3.9795,10.511 16.6225,10.511C17.2802,10.5395 17.857,10.0036 17.9804,9.24958 18.0939,8.4309 17.617,7.65963 16.9151,7.52682z" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+    <!--#endregion-->
+    
+</ResourceDictionary>
